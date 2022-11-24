@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Her_2001092017</string>
+    <string-array name="array_pendidikan">
+        <item>JWD</item>
+        <item>Mobile</item>
+        <item>Networking</item>
+        <item>Radio Frekuensi</item>
+    </string-array>
+</resources>

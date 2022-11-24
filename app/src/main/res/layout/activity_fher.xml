@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".FHer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Data Peserta"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_nama2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Peserta"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvjudul"
+            />
+        <EditText
+            android:id="@+id/ed_nama2017"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Peserta"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_nama2017"
+            />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/ed_nama2017"
+            />
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Email Peserta"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvEmail"
+            />
+        <TextView
+            android:id="@+id/tv_jk2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/edEmail"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgJk"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_jk2017">
+
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Perempuan"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Laki-laki"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/rgJk"
+            />
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Password Peserta"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvPassword"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/tv_tanggal2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/edPassword"
+            />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tanggal2017"
+            android:background="@drawable/bg_edit_text"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_baseline_date_range_24"
+            android:drawableRight="@drawable/ic_baseline_date_range_24"
+            android:padding="10sp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tvSkema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skema Pelatihan"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvDate"
+            />
+        <Spinner
+            android:id="@+id/spinSkema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSkema"
+            android:entries="@array/array_pendidikan"
+            />
+        <Button
+            android:id="@+id/btnSimpan2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SIMPAN"
+            android:background="@drawable/bg_btn"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@+id/spinSkema"
+            />
+    </RelativeLayout>
+</ScrollView>
